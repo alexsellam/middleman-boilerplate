@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Le Wagon Middleman boilerplate
 ---
 
@@ -6,5 +6,114 @@ title: Le Wagon Middleman boilerplate
   <h1>Middleman is Watching</h1>
   <p class="doc">
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  </p><!-- .doc
+</div><!-- .welcome
+ --> --> -->
+
+<body>
+
+  <!-- Banner -->
+  <div id="banner" class='text-left'>
+
+    <h1>Styl.us</h1>
+
+    <h3>Turn your pen into your best friend</h3>
+
+    <h3>Make every line you write count...</h3>
+
+    <br>
+
+    <br>
+
+
+    <a class='btn-lg btn-primary' href='#'> GET YOUR STYLUS </a>
+
+  </div>
+
+  <!-- Features -->
+
+  <div id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 text-center">
+          <%= image_tag "paper.svg" %>
+   <!--        <img src="images/paper.svg"> -->
+          <h3> Natural writing </h3>
+          <p>Don't change your habits, write with a pen on paper notebooks</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+          <%= image_tag "computer.svg" %>
+         <!--  <img src="images/computer.svg"> -->
+          <h3> Sync. copy </h3>
+          <p>Stylus instanteneously copy your text on your computer, in real time</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+          <%= image_tag "analytics.svg" %>
+        <!--   <img src="images/analytics.svg"> -->
+          <h3> Analytics </h3>
+          <p>Get feedbacks on the way you write, your favorite words, your frequent mistakes</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+          <%= image_tag "data.svg" %>
+         <!--  <img src="images/data.svg"> -->
+          <h3> Storing your texts </h3>
+          <p>Everything line writen with your stylus is stored in the cloud, so that it's never lost</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Map -->
+    <div id="form">
+      <h2 class="text-center">Get news from stylus</h2>
+      <p class="text-center">Leave us your mail and get stylus news</p>
+
+      <form class="form-inline text-center">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail3">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="bob@gmail.com">
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+
+    </div>
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+      var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+      var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+      };
+
+      var map = new google.maps.Map(document.getElementById('map'), myOptions);
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+      });
+      </script>
+  <!-- Footer -->
+
+<!--
+  <div id="footer">
+    <ul class='list-inline'>
+      <li><a href=""><i class="fa fa-youtube"></i></a></li>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    </ul>
+  </div> -->
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>

@@ -1,0 +1,25 @@
+#banner {
+  background: image-url('background.jpg');
+  padding: 200px 0px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#features {
+  background:#4A9BDE;
+  padding: 200px 0px;
+  p {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+  }
+}
+
+
+#form {
+  background-color: #FFFFFF ;
+  padding: 100px 0px;
+  h2, p {
+    color: #131313;
+  }
+}
+
